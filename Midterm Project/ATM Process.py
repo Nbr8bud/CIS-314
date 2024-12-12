@@ -20,7 +20,7 @@ class bank_account():
 
     def transfer(self, destination_account, Amount):
         if Amount <= 0:
-            return "Your transfer has to be more than 0"
+            return "Your transfer must be more than 0"
         elif Amount > self.amount:
             return "Sorry you have insufficient funds."
         else:
